@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style media="screen">
+  .img-res{
+
+width: 140px;
+height: 100px;
+float: left;
+margin: 20px;
+
+}
+.imageperson
+{
+  float: center;
+  width: 200px;
+  height: 200px;
+  margin-left: 68px;
+  margin-top: 20px;
+
+}
+
+.divh
+{
+
+  width: 100%;
+  height: 130px;
+  text-align: center;
+  color:#070385;
+
+
+
+}
+.botomdiv
+{
+  background-color:#045057;
+  width:100%;
+  height:200px;
+  margin-top:20px;
+}
+h1{
+  color: white;
+}
+h3
+{
+  color: red;
+}
+.divinfo
+{
+ color: white;
+ width: 800px;
+ height: 100%;
+ color: white;
+margin-left: 20px;
+margin-top: 20px;
+ text-align: justify;
+font-size: 7m;
+
+}
+
+.divperson1
+{
+  background-color: white;
+  float: right;
+  width: 330px;
+  height: 350px;
+  margin-right: 22px;
+  margin-top: 20px;
+}
+.divperson2
+{
+  background-color: white;
+  float: right;
+  width: 330px;
+  height: 350px;
+  margin-right: 4px;
+  margin-top: 100px;
+}
+.marq
+{
+
+  color: #0d05f5;
+  background-color: #fcf803;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+
+}
+body {
+  background-image: url('image/river.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#ed0eb9;
+}
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {float: none;}
+}
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nadim</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+  $(document).ready(function() {
+  $('#example').DataTable();
+} );
+  </script>
+</head>
+<body>
+  <div class="row">
+   <div class="divh shadow-lg">
+     <h1 class=""> <img src="nstu.png" class="img-res" ><b>Golakandial Majibar Rahman Bhuiyan High School</b></h1>
+     <h3 class="">Golakandial Rupgonj-1460</h3>
+
+   </div>
+
+
+
+
+ </div>
+ <ul class="topnav">
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="News.html"data-toggle="tooltip" title="Hooray!">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#Academics">Academics</a></li>
+  <li><a  class="active" href="Modal.html">Admission</a></li>
+  <li><a href="#notices">Notices</a></li>
+  <li><a href="Result.html">Result</a></li>
+  <li><a href="#photos">Photos</a></li>
+  <li class="right"><a href="#about">About</a></li>
+</ul>
+
+
+   <div class="marq">
+        <marquee>গোলাকান্দাইল মজিবর রহমান ভূইয়া উচ্চ বিদ্যালয়</marquee>
+   </div>
+   <div class="container mt-3">
+  <h2>Modal Example</h2>
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open modal
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="container mt-3">
+  <h3>Popover Example</h3>
+  <p>Popovers must be initialized with jQuery: select the specified element and call the popover() method.</p>
+  <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+</div>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();
+});
+</script>
+<div class="container mt-3">
+  <h3>Tooltip Example</h3>
+  <p>Tooltips must be initialized with jQuery: select the specified element and call the tooltip() method.</p>
+  <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+</div>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+<div class="container mt-3">
+  <h2>Enable Via JavaScript</h2>
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a>
+      <a class="dropdown-item" href="#">Link 2</a>
+      <a class="dropdown-item" href="#">Link 3</a>
+    </div>
+  </div>
+  <p><strong>Note:</strong> The data-toggle="dropdown" attribute is required regardless of whether you call the dropdown() method.</p>
+</div>
+
+<script>
+$(document).ready(function(){
+  $(".dropdown-toggle").dropdown();
+});
+</script>
+<div class="container">
+<h2>Pagination</h2>
+<p>To create a basic pagination, add the .pagination class to an ul element. Then add the .page-item to each li element and a .page-link class to each link inside li:</p>
+<ul class="pagination">
+ <li class="page-item"><a class="page-link" href="Home.html">Previous</a></li>
+ <li class="page-item"><a class="page-link" href="Modal.html">1</a></li>
+ <li class="page-item"><a class="page-link" href="News.html">2</a></li>
+ <li class="page-item"><a class="page-link" href="Result.html">3</a></li>
+ <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+</div>
+
+     <div class="botomdiv">
+
+       <div class="row">
+     <div class="col ml-5 mt-2">
+      <p class="text-white">এক নজরে গুরুত্বপূর্ণ মেন্যু</p>
+      <li class="text-white"><a class="text-white" href="#home">কমিটি</a></li>
+      <li class="text-white"><a class="text-white"href="nadim34.html">জনবল</a></li>
+      <li class="text-white"><a class="text-white"href="#contact">ভর্তি বিজ্ঞপ্তি</a></li>
+     </div>
+     <div class="col mt-5">
+      <li class="text-white"><a class="text-white" href="#home">সাময়ীক পরীক্ষা</a></li>
+      <li class="text-white"><a class="text-white"href="nadim34.html">কুইজ পরীক্ষা</a></li>
+      <li class="text-white"><a class="text-white"href="#contact">পাবলিক পরীক্ষাি</a></li>
+     </div>
+     <div class="col mt-5">
+      <li class="text-white"><a class="text-white" href="#home">ছাত্র-ছাত্রীর তথ্য</a></li>
+      <li class="text-white"><a class="text-white"href="nadim34.html">বৃত্তি</a></li>
+     </div>
+     <div class="col">
+     <p class="text-white">
+      <br>Our Contact Address <br>
+
+     Shamsul Hoque Khan School & College
+     Paradogair, Matuail, Demra
+     Dhaka -1362 <br><br>
+     Mobile: 01712715325, 01728113929 <br><br>
+
+
+     Phone: +88 02 7559007</p>
+     </div>
+     </div>
+
+     </div>
+
+
+
+
+</body>
+</html>
